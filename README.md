@@ -41,7 +41,7 @@ The pipeline creates a ranked review queue with a risk score, risk band and plai
 
 ## Data
 
-The included sample is deterministic synthetic data generated only for demonstration and testing. It is not IBM data and contains no real people, accounts or financial activity.
+The generated sample is deterministic synthetic data used only for demonstration and testing. It is not IBM data and contains no real people, accounts or financial activity.
 
 The project is designed around a generic AML-style transaction schema and can be adapted to an appropriately licensed dataset. Any future IBM AML data must be obtained under its own terms and is intentionally not redistributed here.
 
@@ -69,6 +69,16 @@ The current baseline flags:
 - statistical anomalies from an Isolation Forest model.
 
 These signals are deliberately visible in `risk_reason`. The output supports review; it is not a substitute for an investigator or a compliant production AML program.
+
+### Demo output
+
+On the deterministic 500-transaction sample, the current scoring logic produces 11 high-, 87 medium- and 402 low-risk records. These are pipeline checks, not fraud-performance metrics—the sample has no ground-truth fraud labels.
+
+| Transaction | Risk score | Risk band | Explanation |
+|---|---:|---|---|
+| `TX-000002` | 83.5 | High | Large amount, cross border, new account |
+| `TX-000004` | 82.1 | High | Large amount, cross border, new account |
+| `TX-000005` | 66.7 | High | Large amount, cross border |
 
 ## SQL and Power BI
 
