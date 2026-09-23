@@ -1,5 +1,9 @@
 # Financial Crime Analytics
 
+[![CI](https://github.com/Tansari2004/financial-crime-analytics/actions/workflows/ci.yml/badge.svg)](https://github.com/Tansari2004/financial-crime-analytics/actions/workflows/ci.yml)
+[![Python 3.11](https://img.shields.io/badge/python-3.11-blue.svg)](https://www.python.org/downloads/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 An in-progress portfolio project for turning transaction data into an investigator-ready review queue using SQL, Python, machine learning and Power BI.
 
 > **Project status:** Active development. The repository currently contains a reproducible synthetic-data demo, explainable risk signals, a baseline anomaly model and a Power BI-ready export. It does **not** claim production deployment or validated fraud detection performance.
